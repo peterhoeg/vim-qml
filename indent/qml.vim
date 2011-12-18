@@ -1,7 +1,7 @@
 " Vim indent file
-" Language:	QML
-" Author:	Robert Kieffer
-" URL:		-
+" Language:     QML
+" Author:       Robert Kieffer
+" URL:
 " Last Change:  2010-03-27 (Happy Birthday, Dash!)
 "
 " Improved JavaScript indent script.
@@ -57,4 +57,3 @@ function! GetJsIndent()
 
   return ind
 endfunction
-
