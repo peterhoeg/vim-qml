@@ -39,7 +39,6 @@ syn region  qmlRegexpString      start=+/[^/*]+me=e-1 skip=+\\\\\|\\/+ end=+/[gi
 syn match   qmlObjectLiteralType "[A-Za-z][_A-Za-z0-9]*\s*\({\)\@="
 syn match   qmlNonBindingColon   "?[^;]*:"
 syn match   qmlBindingProperty   "\<[A-Za-z][_A-Za-z.0-9]*\s*:"
-syn match   qmlIdProperty        "\<id\s*:\s*[A-Za-z][_A-Za-z.0-9]*"
 
 syn keyword qmlConditional       if else switch
 syn keyword qmlRepeat            while for do in
@@ -122,7 +121,6 @@ if version >= 508 || !exists("did_qml_syn_inits")
   HiLink qmlConstant          Label
   HiLink qmlNonBindingColon   NONE
   HiLink qmlBindingProperty   Label
-  HiLink qmlIdProperty        Identifier
 
   delcommand HiLink
 endif
