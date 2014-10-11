@@ -55,7 +55,7 @@ syn keyword qmlException         try catch finally throw
 syn keyword qmlMessage           alert confirm prompt status
 syn keyword qmlGlobal            self
 syn keyword qmlDeclaration       property signal
-syn keyword qmlReserved          abstract boolean byte char class const debugger enum export extends final float goto implements import interface long native package private protected public short static super synchronized throws transient volatile
+syn keyword qmlReserved          abstract boolean byte char class const debugger enum export extends final float goto implements import interface long native package private protected public short static super synchronized throws transient volatile pragma
 
 if exists("qml_fold")
   syn match   qmlFunction      "\<function\>"
