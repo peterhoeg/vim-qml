@@ -28,7 +28,7 @@ syn case ignore
 syn keyword qmlCommentTodo       TODO FIXME XXX TBD contained
 syn match   qmlLineComment       "\/\/.*" contains=@Spell,qmlCommentTodo
 syn match   qmlCommentSkip       "^[ \t]*\*\($\|[ \t]\+\)"
-syn region  qmlComment           start="/\*"  end="\*/" contains=@Spell,qmlCommentTodo
+syn region  qmlComment           start="/\*"  end="\*/" contains=@Spell,qmlCommentTodo fold
 syn match   qmlSpecial           "\\\d\d\d\|\\."
 syn region  qmlStringD           start=+"+  skip=+\\\\\|\\"\|\\$+  end=+"\|$+  contains=qmlSpecial,@htmlPreproc
 syn region  qmlStringS           start=+'+  skip=+\\\\\|\\'\|\\$+  end=+'\|$+  contains=qmlSpecial,@htmlPreproc
@@ -57,7 +57,7 @@ syn keyword qmlGlobal            self
 syn keyword qmlDeclaration       property signal
 syn keyword qmlReserved          abstract boolean byte char class const debugger enum export extends final float goto implements import interface long native package pragma private protected public short static super synchronized throws transient volatile
 
-if exists("qml_fold")
+if get(g:, 'qml_fold', 0)
   syn match   qmlFunction      "\<function\>"
   syn region  qmlFunctionFold  start="\<function\>.*[^};]$" end="^\z1}.*$" transparent fold keepend
 
