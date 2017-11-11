@@ -1,10 +1,13 @@
 " Vim syntax file
 " Language:     QML
-" Maintainer:   Warwick Allison <warwick.allison@nokia.com>
-" Updaters:
-" URL:
-" Changes:
-" Last Change:  2009 Apr 30
+" Maintainer:   Peter Hoeg <peter@hoeg.com>
+" Updaters:     Refer to CONTRIBUTORS.md
+" URL:          https://github.com/peterhoeg/vim-qml
+" Changes:      `git log` is your friend
+" Last Change:  2017-11-11
+"
+" This file is bassed on the original work done by Warwick Allison
+" <warwick.allison@nokia.com> whose did about 99% of the work here.
 
 " Based on javascript syntax (as is QML)
 
