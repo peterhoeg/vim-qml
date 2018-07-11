@@ -35,6 +35,8 @@ syn region  qmlComment           start="/\*"  end="\*/" contains=@Spell,qmlComme
 syn match   qmlSpecial           "\\\d\d\d\|\\."
 syn region  qmlStringD           start=+"+  skip=+\\\\\|\\"\|\\$+  end=+"\|$+  contains=qmlSpecial,@htmlPreproc,@Spell
 syn region  qmlStringS           start=+'+  skip=+\\\\\|\\'\|\\$+  end=+'\|$+  contains=qmlSpecial,@htmlPreproc,@Spell
+syn region  qmlStringD           start=+"+  end=+"+  keepend  contains=qmlSpecial,@htmlPreproc,@Spell
+syn region  qmlStringS           start=+'+  end=+'+  keepend  contains=qmlSpecial,@htmlPreproc,@Spell
 
 syn match   qmlCharacter         "'\\.'"
 syn match   qmlNumber            "-\=\<\d\+L\=\>\|0[xX][0-9a-fA-F]\+\>"
