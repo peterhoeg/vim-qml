@@ -52,7 +52,7 @@ syn keyword qmlType              action alias bool color date double enumeration
 syn keyword qmlStatement         return with
 syn keyword qmlBoolean           true false
 syn keyword qmlNull              null undefined
-syn keyword qmlIdentifier        arguments this var
+syn keyword qmlIdentifier        arguments this var let
 syn keyword qmlLabel             case default
 syn keyword qmlException         try catch finally throw
 syn keyword qmlMessage           alert confirm prompt status
