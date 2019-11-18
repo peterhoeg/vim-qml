@@ -27,7 +27,7 @@ endif
 
 syn case ignore
 
-syn cluster qmlExpr              contains=qmlStringD,qmlStringS,SqmlCharacter,qmlNumber,qmlObjectLiteralType,qmlBoolean,qmlType,qmlJsType,qmlNull,qmlGlobal,qmlFunction
+syn cluster qmlExpr              contains=qmlStringD,qmlStringS,SqmlCharacter,qmlNumber,qmlObjectLiteralType,qmlBoolean,qmlType,qmlJsType,qmlNull,qmlGlobal,qmlFunction,qmlArrowFunction
 syn keyword qmlCommentTodo       TODO FIXME XXX TBD contained
 syn match   qmlLineComment       "\/\/.*" contains=@Spell,qmlCommentTodo
 syn match   qmlCommentSkip       "^[ \t]*\*\($\|[ \t]\+\)"
@@ -73,9 +73,10 @@ if get(g:, 'qml_fold', 0)
   setlocal foldmethod=syntax
   setlocal foldtext=getline(v:foldstart)
 else
-  syn keyword qmlFunction function
-  syn match   qmlBraces   "[{}\[\]]"
-  syn match   qmlParens   "[()]"
+  syn keyword qmlFunction         function
+  syn match   qmlArrowFunction    "=>"
+  syn match   qmlBraces           "[{}\[\]]"
+  syn match   qmlParens           "[()]"
 endif
 
 syn sync fromstart
@@ -113,6 +114,7 @@ if version >= 508 || !exists("did_qml_syn_inits")
   HiLink qmlObjectLiteralType Type
   HiLink qmlStatement         Statement
   HiLink qmlFunction          Function
+  HiLink qmlArrowFunction     Function
   HiLink qmlBraces            Function
   HiLink qmlError             Error
   HiLink qmlNull              Keyword
