@@ -25,7 +25,7 @@ if version < 600 && exists("qml_fold")
   unlet qml_fold
 endif
 
-syn case ignore
+syn case match
 
 syn cluster qmlExpr              contains=qmlStringD,qmlStringS,qmlStringT,SqmlCharacter,qmlNumber,qmlObjectLiteralType,qmlBoolean,qmlType,qmlJsType,qmlNull,qmlGlobal,qmlFunction,qmlArrowFunction
 syn keyword qmlCommentTodo       TODO FIXME XXX TBD contained
@@ -62,8 +62,6 @@ syn keyword qmlMessage           alert confirm prompt status
 syn keyword qmlGlobal            self
 syn keyword qmlDeclaration       property signal component readonly required
 syn keyword qmlReserved          abstract boolean byte char class debugger enum export extends final float goto implements import interface long native package pragma private protected public short static super synchronized throws transient volatile
-
-syn case match
 
 " List extracted in alphabatical order from: https://doc.qt.io/qt-5/qmltypes.html
 " Qt v5.15.1
