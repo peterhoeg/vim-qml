@@ -4,7 +4,7 @@
 " Updaters:     Refer to CONTRIBUTORS.md
 " URL:          https://github.com/peterhoeg/vim-qml
 " Changes:      `git log` is your friend
-" Last Change:  2017-11-11
+" Last Change:  2021-03-16
 "
 " This file is bassed on the original work done by Warwick Allison
 " <warwick.allison@nokia.com> whose did about 99% of the work here.
