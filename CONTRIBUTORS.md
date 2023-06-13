@@ -5,7 +5,9 @@ have made contributions:
 
 * 14mRh4X0r
 * Alejandro Exojo
+* Furkan Üzümcü
 * Luis Gabriel Lima
+* Matthew Fry
 * miruka
 * NaKyle
 * N.Sukegawa
